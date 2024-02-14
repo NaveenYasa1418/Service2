@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: employee-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/employeesdb
+    username: root
+    password: Shiva9550
+
+  config:
+    import: "optional:configserver:http://localhost:8088"
